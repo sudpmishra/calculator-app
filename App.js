@@ -73,7 +73,7 @@ export default class App extends Component {
 			case "-":
 			case "*":
 			case "/":
-				if (calcText.length === 0) {
+				if (calcText.length === 0 && id != "-") {
 					return;
 				}
 				let lastChar = calcText.split('').pop();
@@ -163,7 +163,6 @@ const styles = StyleSheet.create({
 	opsbtn: {
 		marginTop: 10,
 		marginLeft: 20,
-		marginBottom: 10,
 	},
 	row: {
 		flexDirection: "row",
